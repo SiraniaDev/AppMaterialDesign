@@ -13,9 +13,11 @@
 		29CC7D9D24ADC07C008E3173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CC7D9B24ADC07C008E3173 /* Main.storyboard */; };
 		29CC7D9F24ADC07E008E3173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CC7D9E24ADC07E008E3173 /* Assets.xcassets */; };
 		29CC7DA224ADC07E008E3173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CC7DA024ADC07E008E3173 /* LaunchScreen.storyboard */; };
+		F88EDD0254783203B13EAB82 /* Pods_AppMaterialDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BECD5062013AE5960AA719 /* Pods_AppMaterialDesign.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2097E955D1A57797CDF15C06 /* Pods-AppMaterialDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppMaterialDesign.debug.xcconfig"; path = "Target Support Files/Pods-AppMaterialDesign/Pods-AppMaterialDesign.debug.xcconfig"; sourceTree = "<group>"; };
 		29CC7D9224ADC07C008E3173 /* AppMaterialDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMaterialDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29CC7D9524ADC07C008E3173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29CC7D9724ADC07C008E3173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		29CC7D9E24ADC07E008E3173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29CC7DA124ADC07E008E3173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29CC7DA324ADC07E008E3173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79BECD5062013AE5960AA719 /* Pods_AppMaterialDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppMaterialDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8A81CA38C7D0B07D0A6A46 /* Pods-AppMaterialDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppMaterialDesign.release.xcconfig"; path = "Target Support Files/Pods-AppMaterialDesign/Pods-AppMaterialDesign.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88EDD0254783203B13EAB82 /* Pods_AppMaterialDesign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				29CC7D9424ADC07C008E3173 /* AppMaterialDesign */,
 				29CC7D9324ADC07C008E3173 /* Products */,
+				5A4A01F9228396FE4B198C9B /* Pods */,
+				756EBF0E7A9CB25452F16907 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = AppMaterialDesign;
 			sourceTree = "<group>";
 		};
+		5A4A01F9228396FE4B198C9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2097E955D1A57797CDF15C06 /* Pods-AppMaterialDesign.debug.xcconfig */,
+				8E8A81CA38C7D0B07D0A6A46 /* Pods-AppMaterialDesign.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		756EBF0E7A9CB25452F16907 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79BECD5062013AE5960AA719 /* Pods_AppMaterialDesign.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29CC7DA624ADC07E008E3173 /* Build configuration list for PBXNativeTarget "AppMaterialDesign" */;
 			buildPhases = (
+				8E6A31E18B2A9FFFD4CBAFEB /* [CP] Check Pods Manifest.lock */,
 				29CC7D8E24ADC07C008E3173 /* Sources */,
 				29CC7D8F24ADC07C008E3173 /* Frameworks */,
 				29CC7D9024ADC07C008E3173 /* Resources */,
+				C073224750481D09E9634170 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E6A31E18B2A9FFFD4CBAFEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppMaterialDesign-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C073224750481D09E9634170 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppMaterialDesign/Pods-AppMaterialDesign-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppMaterialDesign/Pods-AppMaterialDesign-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppMaterialDesign/Pods-AppMaterialDesign-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29CC7D8E24ADC07C008E3173 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		29CC7DA724ADC07E008E3173 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2097E955D1A57797CDF15C06 /* Pods-AppMaterialDesign.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		29CC7DA824ADC07E008E3173 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8A81CA38C7D0B07D0A6A46 /* Pods-AppMaterialDesign.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
