@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import MaterialComponents.MaterialActionSheet
-import MaterialComponents.MaterialButtons
+import MaterialComponents
 
 
 class ViewController: UIViewController {

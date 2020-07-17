@@ -20,33 +20,30 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sirania'Dev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5i-Zu-cIR">
-                                <rect key="frame" x="111" y="429" width="192.5" height="38.5"/>
+                                <rect key="frame" x="111" y="309.5" width="192.5" height="277"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGr-PC-d79">
-                                <rect key="frame" x="127" y="662" width="160" height="92"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="n6a-F9-F3y">
+                                <rect key="frame" x="133.5" y="650" width="147" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="iBS-4V-gd7"/>
+                                    <constraint firstAttribute="width" constant="147" id="h5y-BU-6ec"/>
+                                    <constraint firstAttribute="height" constant="140" id="ymN-un-oDj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Welcome to my Github ">
-                                    <color key="titleColor" red="0.86739802359999996" green="0.62681430579999997" blue="0.35679346319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n6a-F9-F3y" secondAttribute="bottom" constant="72" id="3cr-aN-G5H"/>
+                            <constraint firstItem="n6a-F9-F3y" firstAttribute="top" secondItem="h5i-Zu-cIR" secondAttribute="bottom" constant="63.5" id="56a-oK-6Tw"/>
                             <constraint firstItem="IOU-k6-R0H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CED-gt-L4T"/>
+                            <constraint firstItem="n6a-F9-F3y" firstAttribute="centerX" secondItem="h5i-Zu-cIR" secondAttribute="centerX" id="euc-vG-9fu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IOU-k6-R0H" secondAttribute="bottom" id="i2D-Ts-3us"/>
                             <constraint firstItem="h5i-Zu-cIR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kHh-5c-2Ad"/>
                             <constraint firstItem="h5i-Zu-cIR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kTs-Lg-6dh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IOU-k6-R0H" secondAttribute="trailing" id="oEs-H9-7c1"/>
                             <constraint firstItem="IOU-k6-R0H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r0L-Me-C5a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JGr-PC-d79" secondAttribute="trailing" constant="127" id="smA-zg-6zj"/>
-                            <constraint firstItem="JGr-PC-d79" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="wNu-Vb-Fw4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JGr-PC-d79" secondAttribute="bottom" constant="150" id="wSA-1R-o45"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -58,5 +55,6 @@
     </scenes>
     <resources>
         <image name="PHOTO-2020-06-27-18-09-15" width="640" height="1136"/>
+        <image name="logo" width="235" height="235"/>
     </resources>
 </document>
